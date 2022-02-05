@@ -118,7 +118,6 @@ nav ul a:hover {
 /* paragraph CSS */
 p {
   text-align: justify;
-  font-family: 'Crimson Text', serif;
   font-size: 18px;
 }
 
@@ -273,6 +272,22 @@ img.responsive-img {
 }
 
 /* download button */
+
+.arrow {
+  content: '\261F';
+}
+.arrow:after {
+  position: absolute;
+  top: 50%;
+  right: 0.6em;
+  font-size: 2.5rem;
+  -webkit-transform: rotate(90deg) translate(-65%, -50%);
+  transform: rotate(90deg) translate(-65%, -50%);
+  /* content: '\2193'; */
+  content: '\27AE';
+  opacity: 0;
+  transition: all 0.3s ease;
+}
 .final__animated-button-2 {
   position: relative;
   display: inline-block;
@@ -305,11 +320,10 @@ img.responsive-img {
 
 /* letter box css */
 .letter-image {
-  position: absolute;
+  /* position: absolute;
   top: 50%;
-  left: 50%;
-  width: 200px;
-  height: 200px;
+  left: 50%; */
+  position: fixed;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -349,6 +363,7 @@ img.responsive-img {
   border-color: #cf4a43 transparent transparent transparent;
   z-index: 2;
 }
+
 .animated-mail .back-fold {
   position: absolute;
   bottom: 0;
@@ -366,6 +381,12 @@ img.responsive-img {
   border-width: 50px 0 50px 100px;
   border-color: transparent transparent transparent #e15349;
   z-index: 2;
+  color: white;
+}
+.animated-mail .text-on-envelop {
+  position: absolute;
+  left: -25px;
+  top: 5px;
 }
 .animated-mail .letter {
   left: 20px;
@@ -396,14 +417,16 @@ img.responsive-img {
   margin-left: 5px;
   height: 10px;
   width: 40%;
-  background: #cb5a5e;
+  /* background: #cb5a5e; */
+  color: #cb5a5e;
 }
 .animated-mail .letter .letter-context {
   margin-top: 10px;
   margin-left: 5px;
   height: 10px;
   width: 20%;
-  background: #cb5a5e;
+  /* background: #cb5a5e; */
+  color: #cb5a5e;
 }
 .animated-mail .letter .letter-stamp {
   margin-top: 30px;
